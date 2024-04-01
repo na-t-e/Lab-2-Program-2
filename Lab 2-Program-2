@@ -1,0 +1,43 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+
+using namespace std;
+
+const float INT_RATE = 0.05;
+
+int main()
+{
+float balance = 1000;
+float deposit = 0;
+float newBal = 0;
+float interest = 0;
+
+cout << "Please enter the deposit amount: $";
+cin >> deposit;
+
+newBal = balance + deposit;
+interest = (newBal * INT_RATE) / 12;
+cout << "\n---------------- Account Summary ------------------\n" << endl;
+cout << left << setw(20) << "Previous balance: " << right << setw(10) << "$ "
+<< balance << endl;
+cout << left << setw(20) << "Deposit Amount: " << right << setw(10) << "$ " <<
+deposit << endl;
+cout << left << setw(20) << "New Balance: " << right << setw(10) << "$ " <<
+newBal << endl;
+cout << left << setw(20) << "Monthly Interest: " << right << setw(10) << "$ "
+<< interest << endl;
+return 0;
+}
+
+// OUTPUT
+Please enter the deposit amount : $500
+----------------Account Summary------------------
+Previous balance : $ 1000
+Deposit Amount : $ 500
+New Balance : $ 1500
+Monthly Interest : $ 6.25
+C : \Users\Nathan\source\repos\9 - 9 - 2020 C++\Debug\9 - 9 - 2020 C++.exe(process
+3676) exited with code 0.
+Press any key to close this window . . .
+//
